@@ -1,0 +1,14 @@
+const card = document.getElementById("meuCard");
+const textoCard = document.getElementById("textoCard");
+const inputTitulo = document.getElementById("titulo");
+
+function abrirCard(event) {
+
+    const nomeDoLivro = inputTitulo.value;
+    textoCard.innerText = `Livro Cadastrado: ${nomeDoLivro}`;
+    card.classList.add("visivel");
+}
+
+function fecharCard() {
+    card.classList.remove("visivel");
+}

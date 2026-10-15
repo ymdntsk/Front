@@ -1,0 +1,189 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Logotitulo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+img{
+    display: flex;
+    width: 70%;
+        align-items: center;
+    align-content: center;
+    margin-left:90px;
+}
+.FormContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.FormContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.FormularioCadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    background-color: #0d5a8e;
+    border: 2px solid #074168;
+    border-radius: 13px;
+}
+h1{
+    text-align: center;
+    color: #d5eeff;
+    margin-top: 20px;
+    width: 100%;
+    height: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+align-items: center;
+   row-gap: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(Img/Background.png);
+      background-repeat: no-repeat, repeat;
+       background-position: center;
+       background-size: cover;
+    overflow: hidden;
+}
+
+
+.FormularioCadastro input{
+    width: 80%;
+    padding: 10px;
+    border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+
+}
+.FormularioCadastro input::placeholder {
+  color: rgb(33, 79, 92);
+}
+.FormularioCadastro i{
+width: 10%;
+color: rgba(25, 3, 3, 0.54);
+}
+
+.FormularioCadastro .input-group{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+.FormularioCadastro .input-item{
+    flex-direction: row;
+    width: 100%;
+    border: transparent 2px solid;
+   background-color: #d0d9ffa7;
+   border-radius: 8px;
+   padding: 5px 10px;
+
+}
+
+.FormularioCadastro .input-item:focus-within{
+   background-color: #d0d9ff;
+   border: #07416889 2px solid;
+    transition: 0.4s;
+}
+    
+
+.FormularioCadastro label{
+    width: 100%;
+    font-weight: bold;
+    color: #efefef;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.FormularioCadastro button{
+    border: 2px solid transparent;
+    margin-top: 30px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+      color: #d5eeff;
+        background-color: #6db7e949;
+        border-radius: 5px;
+}
+
+.FormularioCadastro button:hover{
+  color: #07324f;
+    background-color: #82aecb;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.FormularioCadastro button:focus{
+    border: 2px solid #efefef;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card button{
+    margin-top: 10px;
+    border: 2px solid transparent;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+      color: #143449;
+        border-radius: 5px;
+}
+.card {
+   font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow:column ;
+    position: absolute; 
+    top: 100px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    border: 1px solid #ccc;
+    color: #000000;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden; 
+    transition: 0.4s ease; 
+}
+
+.card.visivel {
+
+    opacity: 1;
+    visibility: visible;
+}
+
+i{
+    color: #07324f;
+}

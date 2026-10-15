@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Cadastrar Livro</title>
+</head>
+<body>
+
+    <main>
+
+        <div id="meuCard" class="card">
+
+            <h3 id="textoCard">Nome Do Livro</h3>
+            <button type="button" class="btn-fechar" onclick="fecharCard()">Fechar</button>
+        </div>
+
+        <section class="Logotitulo"> 
+            <img src="Img/Biblioteca Maneira (1).png" alt="Logo">
+        </section>
+
+        <section class="FormContainer">
+
+            <form class="FormularioCadastro">
+
+                <h1>Cadastrar Livro</h1>
+
+                <div class="input-group">
+                    <label for="titulo">Título:</label>
+                    <div class="input-item">
+                        <i class="fa-solid fa-book"></i>
+                        <input type="text" id="titulo" name="titulo" placeholder="Digite o Titulo" required>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="input-group">
+                    <label for="autor">Autor:</label>
+                    <div class="input-item">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="autor" name="autor" placeholder="Digite o Nome do Autor">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="input-group">
+                    <label for="dataPublicacao">Data De Publicação:</label>
+                    <div class="input-item">
+                        <i class="fa-regular fa-calendar"></i>
+                        <input type="text" id="dataPublicacao" name="dataPublicacao" placeholder="DD/MM/YYYY">
+                    </div>
+                </div>
+
+                <br>
+                
+                <div class="input-group">
+                    <label for="editora">Editora:</label>
+                    <div class="input-item">
+                        <i class="fa-solid fa-file-pen"></i>
+                        <input type="text" id="editora" name="editora" placeholder="Digite a Editora">
+                    </div>
+                </div>
+
+             <button type="button" onclick="abrirCard()">Cadastrar</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
