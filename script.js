@@ -2,7 +2,7 @@ const card = document.getElementById("meuCard");
 const textoCard = document.getElementById("textoCard");
 const inputTitulo = document.getElementById("titulo");
 
-function abrirCard(event) {
+function abrirCard() {
 
     const nomeDoLivro = inputTitulo.value;
     textoCard.innerText = `Livro Cadastrado: ${nomeDoLivro}`;
