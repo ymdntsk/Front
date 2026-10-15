@@ -187,3 +187,9 @@ color: rgba(25, 3, 3, 0.54);
 i{
     color: #07324f;
 }
+
+#dataPublicacao {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
